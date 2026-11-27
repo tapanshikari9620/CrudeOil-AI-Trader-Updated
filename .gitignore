@@ -1,0 +1,56 @@
+@'
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Database and trading data
+*.db
+*.sqlite
+*.sqlite3
+data/*
+!data/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Temporary and backup files
+*.bak
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Path .gitignore -Encoding UTF8
+# Local Git configuration backups
+.gitignore.before_github_backup
+
+# Private audit and diagnostic reports
+AUDIT_REPORT.md
+SECOND_AUDIT_REPORT.md
+PHASE_2_*.md
+IMPLEMENTATION_PROGRESS.md
+IMPLEMENTATION_STATUS.md
+ADAPTIVE_PAPER_TRADING_IMPLEMENTATION.md
